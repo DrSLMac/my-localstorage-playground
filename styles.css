@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, "Sans Serif";
+  }
+  
+  input {
+    display: block;
+  }
+  
+  main {
+    background-color: #ECECEC;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+    margin: 50px auto;
+    padding: 30px 0;
+    border-radius: 5px;
+  }
+  
+  .to-save {
+      min-width: 300px;
+    margin: 5px auto;
+    padding: 5px;
+  }
+  
+  input[type="button"] {
+    font-size: 18px;
+    min-width: 200px;
+    padding: 5px;
+    margin: 20px auto;
+    background-color: #4287f5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    height: 35px;
+    transition: 300ms;
+  }
+  
+  input[type="button"]:hover {
+    cursor: pointer;
+    opacity: .8;
+  }
+  
+  .display-area {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+  
+  .display-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: solid thin grey;
+    /* height: 10vh; */
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgb(152, 201, 203);
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid thin;
+    margin-bottom: 1vh;
+    /* margin-top: 1vh; */
+    padding-bottom: 1vh; 
+  }
+  
+  .fav-btn {
+    width: 3.5vw;
+    /* height: 3.5vh; */
+  }
+  
+  .favorite {
+    filter: invert(22%) sepia(30%) saturate(4598%) hue-rotate(350deg) brightness(86%) contrast(84%);
+    height: 3vh;
+  }
+  
+  .delete-btn {
+    position: relative;
+    background: transparent;
+    border: none;
+    height: 3vh;
+    width: 3vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    margin-top: 0.4vh;
+    margin-bottom: .4vh;
+  }
+  
+  .bottomCard {
+    margin-bottom: 2vh;
+  }
