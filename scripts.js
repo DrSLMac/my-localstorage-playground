@@ -41,7 +41,7 @@ function displayContacts() {
         displayArea.innerHTML += `
         <article class="display-card" id=${contact.id}>
             <div class="top-bar">
-                <img class="fav-btn" src="assets/favorite.svg" alt="favorite icon" />
+                <img class="fav-btn" src="assets/unfavorite.svg" alt="favorite icon" />
                 <img class="delete-btn" src="assets/delete.svg" alt="delete icon"/>
             </div>
             <div class="bottomCard">
@@ -70,11 +70,11 @@ function deleteCard(event) {
 
 function updateFavorite(event) {
     if (event.target.classList.contains("fav-btn")) {
-        if (event.target.getAttribute('src') === 'assets/favorite.svg') {
-            event.target.src = "assets/fav_icon.svg";
-            event.target.closest(".fav-btn").classList.add("favorite")
-        } else if (event.target.getAttribute('src') === "assets/fav_icon.svg") {
+        if (event.target.getAttribute('src') === 'assets/unfavorite.svg') {
             event.target.src = "assets/favorite.svg";
+            event.target.closest(".fav-btn").classList.add("favorite")
+        } else if (event.target.getAttribute('src') === "assets/favorite.svg") {
+            event.target.src = "assets/unfavorite.svg";
             event.target.closest('.fav-btn').classList.remove("favorite")
         }
     }

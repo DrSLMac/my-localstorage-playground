@@ -77,8 +77,7 @@
   }
   
   .favorite {
-    filter: invert(22%) sepia(30%) saturate(4598%) hue-rotate(350deg) brightness(86%) contrast(84%);
-    height: 3vh;
+    filter: invert(22%) sepia(30%) saturate(4598%) hue-rotate(151deg) brightness(86%) contrast(54%) drop-shadow(0rem .1rem 0.25rem rgb(80, 8, 19))
   }
   
   .delete-btn {
