@@ -25,9 +25,11 @@ function addContact() {
         let old_data = JSON.parse(localStorage.getItem('storedContacts'));
         old_data.push(newContact)
         localStorage.setItem('storedContacts', JSON.stringify(old_data))
+        alert("Your new contact has been added to the list!")
     } else {
         cardsArray.push(newContact)
         localStorage.setItem('storedContacts', JSON.stringify(cardsArray))
+        alert("Your new contact has been added to the list!")
     }
     clearInputs()
 }
