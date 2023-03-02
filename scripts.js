@@ -4,7 +4,6 @@ var userInputEmail = document.querySelector("#email");
 var addContactBtn = document.querySelector("#register-btn");
 var displayBtn = document.querySelector("#display-btn")
 var displayArea = document.querySelector(".display-area")
-// var deleteBtn = document.querySelector(".delete-btn")
 
 // 👂🏼 Event listeners 👂🏼
 addContactBtn.addEventListener("click", addContact);
@@ -58,8 +57,6 @@ function deleteCard(event) {
       let chosenCard = event.target.closest(".display-card")
       let cardId = chosenCard.getAttribute('id')
       chosenCard.remove()
-
-      //remove from localStorage ==> localStorage.getItem => change it back to normal array of objects, filter for the id, then stringify to turn it back into JSON
         let old_data = JSON.parse(localStorage.getItem('storedContacts'));
 
         let filterArray = old_data.filter((contact) => {
