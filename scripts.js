@@ -9,8 +9,8 @@ var displayArea = document.querySelector(".display-area")
 // 👂🏼 Event listeners 👂🏼
 addContactBtn.addEventListener("click", addContact);
 displayBtn.addEventListener("click", displayContacts)
-// displayArea.addEventListener("click", deleteCard)
-// displayArea.addEventListener("click", updateFavorite)
+displayArea.addEventListener("click", deleteCard)
+displayArea.addEventListener("click", updateFavorite)
 
 // 🌎 Global Variables 🌎
 let cardsArray = [];
